@@ -89,9 +89,9 @@ class AlgoStrategy(gamelib.AlgoCore):
         are more effective.
         """
         firewall_locations = [[3, 11], [4, 11], [5, 11]]
-        for location in firewall_locations:
-            if game_state.can_spawn(ENCRYPTOR, location):
-                game_state.attempt_spawn(ENCRYPTOR, location)
+		for location in firewall_locations:
+			if game_state.can_spawn(ENCRYPTOR, location):
+				game_state.attempt_spawn(ENCRYPTOR, location)
 
         """
         Lastly lets build encryptors in random locations. Normally building 
